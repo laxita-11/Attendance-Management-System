@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Administration Update</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form
+      class="myForm"
+      method="post"
+      action="/admin/delete"
+    >
+      <p> <h3>Roll Number you want to delete</h3>
+        <label
+          >Roll Number <br />
+          <input type="number" name="roll_no" required />
+        </label>
+      </p>
+      <br>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

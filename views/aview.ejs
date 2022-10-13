@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Administration View</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form
+      class="myForm"
+      method="post"
+      action="/admin/insert"
+    >
+      
+    <table border="1px">
+      <tr>
+        <td>Roll</td>
+        <td>F Name</td>
+        <td>L Name</td>
+        <td>PiD Name</td>
+        <td>DiD Name</td>
+      </tr>
+    <% for(let i = 0; i < students.length; i++){ %>
+      <tr>
+        <td><%= students[i].Roll_No %></td>
+        <td><%= students[i].F_Name %></td>
+        <td><%= students[i].L_Name %></td>
+        <td><%= students[i].P_ID %></td>
+        <td><%= students[i].D_ID %></td>
+      </tr>
+    <% } %>
+  </table>
+  </body>
+</html>

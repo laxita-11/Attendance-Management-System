@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Student View</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form class="myForm" method="post"  action="/stu/view">
+    
+    <h2>Attendance on a particular date</h2>
+    
+    <p>
+        <label>Roll Number &nbsp&nbsp
+        <input type="number" name="Roll_no" required>
+        </label> 
+        </p>
+        
+        <p>
+        <label>Date &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <input type="date" name="date">
+        </label>
+        </p>
+        <br>
+        <button>Submit</button>
+    </form>
+ <br>
+ 
+ <br>
+<h1>Attends</h1>
+<% for(let i = 0; i < attends.length; i++){ %>
+    <tr>
+      <td><%= attends[i].Roll_No %></td>
+      
+    </tr>
+  <% } %>
+ <!--    <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+    
+        <h2>Total attendance in a particular subject</h2>
+    
+        <p>
+            <label>Roll Number &nbsp&nbsp
+            <input type="number" name="Roll_no" required>
+            </label> 
+            </p>
+            
+            <p>
+            <label>Subject_Id &nbsp&nbsp&nbsp&nbsp&nbsp
+            <input type="text" name="sub_id">
+            </label>
+            </p><br>
+            <button>Submit</button>
+        </form>
+    -->
+
+    </body>
+    </html>

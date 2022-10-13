@@ -1,0 +1,49 @@
+.myForm {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1.2em;
+    width: 60em;
+    padding: 1em;
+   
+    }
+    
+    .myForm * {
+    box-sizing: border-box;
+    }
+    
+    .myForm fieldset {
+    border: none;
+    padding: 0;
+    }
+    
+    .myForm legend,
+    .myForm label {
+    padding: 0;
+    padding-left:2em;
+    
+    font-weight: bold;
+    }
+    
+    .myForm label.choice {
+    font-size: 0.9em;
+    font-weight: normal;
+    }
+    
+    
+    
+    
+    
+    .myForm button {
+    padding: 1em;
+    border-radius: 0.5em;
+    background: #eee;
+    border: none;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-right:3em;
+    float:left;
+    }
+    
+    .myForm button:hover {
+    background: #ccc;
+    cursor: pointer;
+    }

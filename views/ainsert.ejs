@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Administration Insert</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form
+      class="myForm"
+      method="post"
+      action="/admin/insert"
+    >
+      <p>
+        <label
+          >Roll Number <br />
+          <input type="number" name="roll_no" required />
+        </label>
+      </p>
+
+      <p>
+        <label>First Name <br />
+          <input type="text" name="f_name" required />
+        </label>
+      </p>
+
+      <p>
+        <label>Last Name <br />
+          <input type="text" name="l_name" required />
+        </label>
+      </p>
+
+      
+      
+      <p>
+        <label>Programme Id <br />
+          <input type="text" name="p_id" />
+        </label>
+      </p>
+
+      <p>
+        <label>Department Id <br />
+          <input type="text" name="d_id" />
+        </label>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
